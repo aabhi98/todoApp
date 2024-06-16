@@ -1,0 +1,25 @@
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px white, 0 0 20px #2575fc;
+    }
+    to {
+        text-shadow: 0 0 20px #6a11cb, 0 0 30px #2575fc;
+    }
+}
+
+.h3-glow {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: 'linear-gradient(to right, #6a11cb, #2575fc)',
+    color: 'white',
+    padding: '10px 20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    fontFamily: '"Segoe UI", Arial, sans-serif',
+    fontSize: '24px',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    animation: 'glow 1.5s ease-in-out infinite alternate'
+}
